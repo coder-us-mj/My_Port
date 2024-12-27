@@ -25,7 +25,7 @@ body {
 
 .container {
     padding: 10px 10%;
-
+   
 }
 
 nav {
@@ -33,14 +33,29 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+ nav::before {
+    content: '';
+    height: 11vh;
+    width: 100vw;
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.75;
+    top: 0;
+    left: 0;
 }
 
-.logo {
-    margin-left: -120px;
+.logo img{
+    margin-left: 0;
     width: 120px;
     height: 60px;
-    opacity: 0;
+    opacity: 1;
     animation: slideRight 1s ease forwards;
+
 }
 
 nav ul li {
@@ -118,7 +133,7 @@ nav ul li a:hover::after {
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
-    color: #ababab;
+    color: #ffffff;
 }
 
 /* ------------------------about------------------ */
@@ -153,7 +168,8 @@ nav ul li a:hover::after {
 .about-col-2 p {
     font-size: 15px;
     line-height: 1.5;
-
+    
+    text-align: justify;
 }
 
 .Sub-Title {
@@ -173,6 +189,7 @@ nav ul li a:hover::after {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
+
     cursor: pointer;
     position: relative;
 }
@@ -195,6 +212,7 @@ nav ul li a:hover::after {
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
+    line-height: 1.5;
 }
 
 .tab-contents ul li span {
@@ -255,289 +273,6 @@ nav ul li a:hover::after {
     background: #ff004f;
     transform: translateY(-10px);
 }
-/* -------------------my skills---------------------- */
-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-.container1 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px;
-    height: 500px;
-    padding: 75px 90px;
-    margin-left: 120px;
-}
-.headings {
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-    margin-bottom: 50px;
-}
-.bar {
-    font-size: 23px;
-
-}
-
-.Technical-bars .bar {
-    margin-top: 40px 0;
-
-}
-
-.Technical-bars .bar:first-child {
-    margin-top: 0;
-}
-
-.Technical-bars .bar:last-child {
-    margin-bottom: 0;
-}
-
-.Technical-bars .bar .info {
-    margin-bottom: 5px;
-}
-
-.Technical-bars .bar .info span {
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0, 5s linear forwards;
-    opacity: 0;
-}
-
-.Technical-bars .bar .progress-line {
-    position: relative;
-    border-radius: 10px;
-    width: 100%;
-    height: 5px;
-    background-color: #ffffff;
-    animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-@keyframes animate {
-    100% {
-        transform: scaleX(1);
-        transform: o;
-    }
-}
-
-.Technical-bars .bar .progress-line span {
-    height: 100%;
-    background-color: #ff004f;
-    position: absolute;
-    border-radius: 10px;
-    animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-
-}
-
-.progress-line .java span {
-    width: 80%;
-}
-
-.progress-line .html span {
-    width: 90%;
-}
-
-.progress-line .css span {
-    width: 60%;
-}
-
-.progress-line .js span {
-    width: 59%;
-}
-
-.progress-line .bootstrap span {
-    width: 80%;
-}
-
-.progress-line .oracle span {
-    width: 70%;
-}
-
-.progress-line .sql span {
-    width: 75%;
-}
-
-.progress-line span::after {
-    position: absolute;
-    padding: 1px 8px;
-    background-color: #262626;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-
-.progress-line .java span::after {
-    content: "80%";
-}
-
-.progress-line .html span::after {
-    content: "90%";
-}
-
-.progress-line .css span::after {
-    content: "80%";
-}
-
-.progress-line .js span::after {
-    content: "59%";
-}
-
-.progress-line .bootstrap span::after {
-    content: "80%";
-}
-
-.progress-line .oracle span::after {
-    content: "70%";
-}
-
-.progress-line .sql span::after {
-    content: "75%";
-}
-
-.progress-line span::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #262626;
-    top: -10px;
-    right: 0;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-
-}
-
-@keyframes showText {
-    100% {
-        opacity: 1;
-    }
-}
-
-.radial-bars {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.radial-bars .radial-bar {
-    width: 50%;
-    height: 170px;
-    margin-bottom: 10px;
-    position: relative;
-
-}
-
-.radial-bars .radial-bar svg {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    width: 120px;
-    height: 160px;
-}
-
-.radial-bars .radial-bar .progress-bar {
-    stroke-width: 10;
-    stop-color: #262626;
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
-    stroke-linecap: round;
-    animation: animate-bar 1s linear forwards;
-
-}
-
-@keyframes animate-bar {
-    100% {
-        stroke-dashoffset: -1;
-    }
-}
-
-.path {
-    stroke-width: 10;
-    stroke: #ff004f;
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
-    stroke-linecap: round;
-}
-
-.path-1 {
-    animation: animate-path1 1s 1s linear forwards;
-}
-
-.path-2 {
-    animation: animate-path2 1s 1s linear forwards;
-}
-
-.path-3 {
-    animation: animate-path3 1s 1s linear forwards;
-}
-
-.path-4 {
-    animation: animate-path4 1s 1s linear forwards;
-}
-
-@keyframes animate-path1 {
-    100% {
-        stroke-dashoffset: 50;
-    }
-}
-
-@keyframes animate-path2 {
-    100% {
-        stroke-dashoffset: 175;
-    }
-}
-
-@keyframes animate-path3 {
-    100% {
-        stroke-dashoffset: 125;
-    }
-}
-
-@keyframes animate-path4 {
-    100% {
-        stroke-dashoffset: 75;
-    }
-}
-
-.radial-bar .percentage {
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-}
-
-.redial-bar .skilltext {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    bottom: -5px;
-    transform: translateX(-50px);
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-}
-
 /* -----------------Portfolio------------------ */
 #portfolio {
     padding: 50px 0;
@@ -768,9 +503,7 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 600px) {
-    .logo {
-        margin: -12px;
-    }
+    
 
     #header {
         background-image: url(/public/images/phoneviewbanner.jpg);
@@ -843,7 +576,7 @@ nav .fa-solid {
 
     .Sub-Title {
         font-size: 40px;
-    }
+        }
 
     .about-col-1,
     .about-col-2 {
@@ -857,18 +590,58 @@ nav .fa-solid {
     .about-col-2 {
         font-size: 14px;
     }
-
+    .about-col-2 .Sub-Title{
+        margin-left: 55px;
+    }
+    .about-col-2 p{
+        margin-top: 30px;
+    }
     .tab-links {
         font-size: 16px;
-        margin-right: 20ox;
-
+        margin-right: 20px;
+        margin-left: 20px;
     }
-
+    .tab-contents{
+        margin-left: 20px;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .service-title{
+        margin-left: 33px;
+    }
+    .work-title{
+        margin-left: 58px;
+    }
     .contact-left,
     .contact-right {
         flex-basis: 100%;
     }
-
+    .contact-left{
+        margin-top: -70px;
+    }
+    .contact-left .Sub-Title{
+        margin-left: 36px;
+        margin-top: 35px;
+    }
+    .contact-left p{
+        margin-left: 36px;
+    }
+    .social-icons{
+        margin-left: 36px;
+    }
+    .social-icons a{
+       padding: 5px;
+    }
+      
+   .bttn1{
+    margin-left: 38px;
+   }
+    form .btn2{
+        margin-left: 60px;
+    }
     .copyright {
         font-size: 14px;
         width: 100%;

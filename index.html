@@ -12,21 +12,23 @@
 </head>
 
 <body>
+    <nav>
+        <div class="logo">
+        <img  src="/public/images/logo MJ.png" alt="logo" >
+    </div>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
     <div id="header">
 
         <div class="container">
-            <nav>
-                <img src="/public/images/logo MJ.jpeg" alt="logo" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
 
             <div class="header-text">
                 <h3>Hello, It's Me</h3>
@@ -37,8 +39,6 @@
                     <br> develop efficient software applications.....
 
                 </p>
-                <!-- <p>Java Developer</p>
-                <h1>Hi, I'm <span>Mukul</span><br> Welcome To My World</h1> -->
             </div>
 
         </div>
@@ -101,7 +101,7 @@
     <!-- ---------------------------Services---------------------- -->
     <div id="services">
         <div class="container">
-            <h1 class="Sub-Title">My Services</h1>
+            <h1 class="Sub-Title service-title">My Services</h1>
             <div class="Services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
@@ -137,7 +137,7 @@
 
     <div id="portfolio">
         <div class="container">
-            <h1 class="Sub-Title">My Work</h1>
+            <h1 class="Sub-Title work-title">My Work</h1>
             <div class="worklist">
                 <div class="work">
                     <img src="/public/images/work1.png" alt="">
@@ -191,7 +191,7 @@
                                 class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/coder-us-mukul"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="/public/images/OverleafCoder_CV.pdf" download class="btn btn2">Download CV</a>
+                    <a href="/public/images/OverleafCoder_CV.pdf" download class="btn btn2 bttn1">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
