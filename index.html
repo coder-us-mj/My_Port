@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Port</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/31bb192a85.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="/public/images/logo MJ.jpeg" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h3>Hello, It's Me</h3>
+                <h1>Mukul Jain</h1>
+                <h3>And I'm a <span class="text"></span></h3>
+                <p>I'm a Passionate and resourceful full Stack Java Developer
+                    <br> committed to crafting seamless digital experiences. I'm
+                    <br> develop efficient software applications.....
+
+                </p>
+                <!-- <p>Java Developer</p>
+                <h1>Hi, I'm <span>Mukul</span><br> Welcome To My World</h1> -->
+            </div>
+
+        </div>
+    </div>
+    <!-- ---------------------------About---------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/public/images/about-section.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Sub-Title">About Me</h1>
+                    <p> I am Mukul Jain, a passionate and resourceful Full Stack Java Developer with hands-on experience
+                        in crafting seamless digital solutions. I have recently completed a Full Stack Java Development
+                        training at "Naresh I Technologies," where I worked on Java features, responsive frontend
+                        design, and efficient database management using Oracle and MySQL. My technical skill set
+                        includes Java, SQL, Oracle, HTML5, CSS3, Spring, and MVC frameworks.
+
+                        One of my notable projects is an Online Banking Management System, where I utilized Java Swing
+                        for a user-friendly interface and MySQL for secure backend operations. I am currently pursuing
+                        my Master's in Computer Applications (MCA) at Bundelkhand University, with a consistent academic
+                        performance.
+
+                        I am committed to continuous learning and contributing to innovative projects, aiming to bring
+                        value to forward-thinking organizations.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br> Full Stack Development</li>
+                            <li><span>Front-End</span><br> Designing Web app Interfaces</li>
+                            <li><span>Back-End</span><br> Integrating Restful API's</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>01-2022 - 04-2022</span><br> Intern as Web Developer at Code Alfa</li>
+                            <li><span>02-2023 - 03-2023</span><br> Google Cloud-Bootcamp on GFG </li>
+                            <li><span>04-2023 - 11-2023</span><br> Intern as Java full stack development at Naresh I
+                                Technologies</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br> Training on Java Module<br>Naresh I Technologies, Hyderabad</li>
+                            <li><span>08-2024</span><br> Master's in Computer Application degree as(MCA)<br>Bundelkhad
+                                University, Jhansi</li>
+                            <li><span>07-2022</span><br> Bachelor's in Computer Application degree as(BCA)<br>Bundelkhad
+                                University, Jhansi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------Services---------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="Sub-Title">My Services</h1>
+            <div class="Services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Softwere Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo hic unde corporis at dicta atque
+                        beatae
+                        pariatur expedita reprehenderit earum.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo hic unde corporis at dicta atque
+                        beatae
+                        pariatur expedita reprehenderit earum.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Back-End Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo hic unde corporis at dicta atque
+                        beatae
+                        pariatur expedita reprehenderit earum.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------portfolio------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="Sub-Title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="/public/images/work1.png" alt="">
+                    <div class="layer">
+                        <h3>Online Bank Management System</h3>
+                        <p>The Online Banking Management System utilizes Java Swing for frontend, ensuring a
+                            user-friendly
+                            interface, and MySQL for backend, ensuring secure data management. </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/public/images/work2.png" alt="">
+                    <div class="layer">
+                        <h3>Online Result Management System</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo
+                            consequuntur tenetur vero nam doloribus.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="/public/images/work3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Interior Desigining eCommerce Web</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo
+                            consequuntur tenetur vero nam doloribus.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+  
+
+    <!-- ------------------------------------contact------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="Sub-Title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> coder.us.jm@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 7307016627</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/coder_us_jm"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/__mukul_________________/?hl=en"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/coder-us-mukul"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/public/images/OverleafCoder_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Mukul. Made With By Own Perception <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        var typed = new Typed(".text", {
+            strings: ["Java Developer....", "Web Designer....", "Backend Developer...."],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        })
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var Sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            Sidemenu.style.right = "0px";
+        }
+        function closemenu() {
+            Sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwm_05LB1zF0pbEXEYNGgyMZcJV5hNnid4iiWnK4-HY-GtzjlKNWPqHJVcFx-mVtiUa/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
