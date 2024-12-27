@@ -776,7 +776,7 @@ nav .fa-solid {
         background-image: url(/public/images/phoneviewbanner.jpg);
         background-repeat: no-repeat;
         overflow: hidden;
-        width: 110%;
+        width: 100%;
     }
 
     .header-text {
@@ -871,6 +871,6 @@ nav .fa-solid {
 
     .copyright {
         font-size: 14px;
-        width: 120%;
+        width: 100%;
     }
 }
